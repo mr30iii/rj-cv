@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAJA CYB H4CK3R - CV</title>
+  <style>
+    /* Hacker Theme Base */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Courier New", monospace;
+      background: #000;
+      color: #00ff00;
+      overflow-x: hidden;
+    }
+
+    /* Matrix Flicker Background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        rgba(0, 255, 0, 0.05) 0px,
+        rgba(0, 255, 0, 0.05) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      animation: flicker 2s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0.5; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #00ff00;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 35px #00ff00, 0 0 60px #00ff00 inset;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00 inset; }
+      to { box-shadow: 0 0 35px #00ff00, 0 0 80px #00ff00 inset; }
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2px dashed #00ff00;
+      padding-bottom: 20px;
+    }
+
+    .header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #00ff00;
+      box-shadow: 0 0 25px #00ff00, 0 0 50px #00ff00 inset;
+      transition: 0.3s;
+    }
+
+    .header img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px #0f0, 0 0 70px #0f0 inset;
+    }
+
+    .header h1 {
+      margin: 15px 0 5px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00;
+      animation: hacker-fade 3s infinite alternate;
+    }
+
+    .header h3 {
+      margin: 0;
+      color: #0ff;
+      text-shadow: 0 0 8px #0ff;
+      font-size: 1.2rem;
+    }
+
+    @keyframes hacker-fade {
+      from { opacity: 0.7; }
+      to { opacity: 1; }
+    }
+
+    .section {
+      margin: 20px 0;
+    }
+
+    .section h2 {
+      border-bottom: 1px dashed #00ff00;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      text-shadow: 0 0 10px #00ff00;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    ul li::before {
+      content: ">> ";
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 5px;
+      padding: 6px 12px;
+      border: 1px solid #00ff00;
+      border-radius: 6px;
+      box-shadow: 0 0 12px #00ff00;
+      background: rgba(0, 255, 0, 0.05);
+      transition: 0.3s;
+      font-size: 0.95rem;
+    }
+
+    .skills span:hover {
+      background: #00ff00;
+      color: #000;
+      box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+
+    .footer {
+      text-align: center;
+      padding-top: 15px;
+      border-top: 2px dashed #00ff00;
+      font-size: 0.85rem;
+      color: #0ff;
+      text-shadow: 0 0 8px #0ff;
+    }
+
+    /* === Mobile Responsiveness === */
+    @media (max-width: 768px) {
+      .container {
+        margin: 15px;
+        padding: 15px;
+      }
+      .header img {
+        width: 120px;
+        height: 120px;
+      }
+      .header h1 {
+        font-size: 2rem;
+      }
+      .header h3 {
+        font-size: 1rem;
+      }
+      .section h2 {
+        font-size: 1.2rem;
+      }
+      ul li {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header img {
+        width: 100px;
+        height: 100px;
+      }
+      .header h1 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+      }
+      .header h3 {
+        font-size: 0.9rem;
+      }
+      .skills span {
+        font-size: 0.85rem;
+        padding: 5px 8px;
+      }
+      .footer {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="ost2928kw.jpg" alt="Profile Pic">
+      <h1>RAJA CYB H4CK3R</h1>
+      <h3>Ethical Hacker | Cyber Security Specialist</h3>
+    </div>
+
+    <!-- About -->
+    <div class="section">
+      <h2>About Me</h2>
+      <p>⚡ Passionate about cybersecurity, ethical hacking, and defending against digital threats. Skilled in penetration testing, malware analysis, and network defense.</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section skills">
+      <h2>Skills</h2>
+      <span>Penetration Testing</span>
+      <span>Web Security</span>
+      <span>Python & JS</span>
+      <span>Networking</span>
+      <span>Linux</span>
+      <span>Reverse Engineering</span>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li>Security Analyst at CyberTech Solutions (2022 - Present)</li>
+        <li>Freelance Bug Bounty Hunter (2019 - 2022)</li>
+        <li>Internship - Ethical Hacking Lab (2018)</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+      <h2>Contact</h2>
+      <ul>
+        <li>Telegram: @pro1coder</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2025 RAJA CYB H4CK3R | Futuristic Hacker CV</p>
+    </div>
+  </div>
+</body>
+</html>
